@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo.ClassVsStruct
 {
-    class VoitureClass
+    public class VoitureClass
     {
         private int _nbRoues = 4;
 
@@ -34,7 +34,7 @@ namespace Demo.ClassVsStruct
         public Colors Couleur { get; set; } 
         #endregion
 
-        public string plaqueId;
+        string PlaqueId;
 
         public void Rouler()
         {
@@ -58,7 +58,7 @@ namespace Demo.ClassVsStruct
             VoitureClass clone = new VoitureClass();
             clone.NbRoues = NbRoues;
             clone.Couleur = Couleur;
-            clone.plaqueId = plaqueId;
+            clone.PlaqueId = PlaqueId;
             return clone;
         }
     }

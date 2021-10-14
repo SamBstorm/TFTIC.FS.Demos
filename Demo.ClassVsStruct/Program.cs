@@ -23,17 +23,17 @@ namespace Demo.ClassVsStruct
             Console.WriteLine("\nCLASS\n\n");
 
             VoitureClass vc = new VoitureClass();
-            vc.couleur = Colors.bleu;
+            vc.Couleur = Colors.bleu;
             vc.NbRoues = -4;
-            vc.plaqueId = "1-XYZ-999";
-            Console.WriteLine($"Class : {vc.couleur},  {vc.NbRoues}  roues, {vc.plaqueId}");
+            vc.PlaqueId = "1-XYZ-999";
+            Console.WriteLine($"Class : {vc.Couleur},  {vc.NbRoues}  roues, {vc.PlaqueId}");
             VoitureClass aliasOfVc = vc;
-            Console.WriteLine($"Alias : {aliasOfVc.couleur},  {aliasOfVc.NbRoues}  roues, {aliasOfVc.plaqueId}");
+            Console.WriteLine($"Alias : {aliasOfVc.Couleur},  {aliasOfVc.NbRoues}  roues, {aliasOfVc.PlaqueId}");
 
             Console.WriteLine("Accident sur Class!!!");
             vc.NbRoues--;
-            Console.WriteLine($"Class : {vc.couleur},  {vc.NbRoues}  roues, {vc.plaqueId}");
-            Console.WriteLine($"Alias : {aliasOfVc.couleur},  {aliasOfVc.NbRoues}  roues, {aliasOfVc.plaqueId}");
+            Console.WriteLine($"Class : {vc.Couleur},  {vc.NbRoues}  roues, {vc.PlaqueId}");
+            Console.WriteLine($"Alias : {aliasOfVc.Couleur},  {aliasOfVc.NbRoues}  roues, {aliasOfVc.PlaqueId}");
 
             Console.WriteLine("Une structure affectée génère une copie de cette structure");
             Console.WriteLine("Une class affectée génère une copie de l'adresse mémoire de la class, générant un alias");
